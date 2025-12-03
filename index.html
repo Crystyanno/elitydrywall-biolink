@@ -3,36 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elity Drywall - Links</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/images/elity drywall- logo.png">
-    <title>Elity Drywall</title>
 </head>
 <body>
-   <section class="my-links">
-        <a href="">
-            <img class="avatar" src="assets/images/elity drywall- logo.png" alt="Elity Drywall Logo">
-        </a>
-        <h1>Elity Drywall</h1>
-        <h2>@elitydrywall</h2>
-        <div class="my-extra-links">
-            <ul class="social-network-links">
-                <li>
-                    <a href="https://www.instagram.com/elitydrywall/" target="_blank">Instagram</a>
-                </li>
-                <li>
-                    <a href="http://wa.me/5562999644294" target="_blank">WhatsApp</a>
-                </li>
-                <li>
-                    <a href="http://wa.me/5562985667058" target="_blank">WhatsApp</a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/profile.php?id=61579679467064" target="_blank">Facebook</a>
-                </li>
-                <li>
-                    <a href="https://elitydrywall.com.br" target="_blank">Site</a>
-                </li>
-            </ul>
+    <div class="container">
+        <div class="logo-container">
+            <img src="assets/images/elity drywall- logo.png" alt="Elity Drywall Logo" class="logo" id="logoImg">
         </div>
-   </section>
+        
+        <h1 class="title">ELITY DRYWALL</h1>
+        <p class="subtitle">Solução em gesso acartonado</p>
+        
+        <a href="https://elitydrywall.com.br/" class="link-btn" id="siteBtn">
+            <i class="fas fa-globe"></i>
+            <span>Visite nosso Site</span>
+        </a>
+        
+        <a href="https://wa.me/556299644294" class="link-btn whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp - Crystyanno</span>
+        </a>
+        
+        <a href="https://wa.me/5562985667058" class="link-btn whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp - Ismael</span>
+        </a>
+        
+        <a href="https://maps.app.goo.gl/GDqpcQCNUx2frdX47" class="link-btn" target="_blank">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Nossa Localização</span>
+        </a>
+        
+        <a href="https://g.page/r/CWrffHPmt4EzEBM/review" class="link-btn" target="_blank">
+            <i class="fas fa-star"></i>
+            <span>Avalie-nos no Google</span>
+        </a>
+        
+        <div class="social-links">
+            <a href="https://www.instagram.com/elitydrywall/" class="social-icon instagram" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61579679467064" class="social-icon facebook" target="_blank" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://g.page/r/YOUR_GOOGLE_LINK" class="social-icon google" target="_blank" title="Google">
+                <i class="fab fa-google"></i>
+            </a>
+        </div>
+        <div class="footer">
+            <p>© 2025 Elity Drywall - Todos os direitos reservados</p>
+            <p>Desenvolvido por <span class="developer">Crystyanno</span></p>
+        </div>
+    </div>
+    
+    <script>
+        // Adicione a URL do seu site aqui
+        document.getElementById('siteBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.open('https://elitydrywall.com.br/', '_blank');
+        });
+
+        // Carrega a logo da imagem que você forneceu
+        // Substitua este URL pela URL real da sua logo hospedada
+        const logoImg = document.getElementById('logoImg');
+        logoImg.onerror = function() {
+            this.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150"><rect fill="%23c9a961" width="150" height="150"/><text x="50%" y="50%" font-size="20" fill="white" text-anchor="middle" dy=".3em">ELITY</text></svg>';
+        };
+    </script>
 </body>
 </html>
